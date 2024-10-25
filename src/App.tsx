@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { Home } from './pages/home'
 import { Admin } from './pages/admin'
@@ -32,4 +32,11 @@ const router = createBrowserRouter([
   }
 ])
 
-export { router };
+function App() {
+
+  return (
+    <RouterProvider router={router} />
+  )
+}
+
+export default App
