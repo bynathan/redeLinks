@@ -6,8 +6,8 @@ import { auth } from '../../services/firebaseConnection'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 
 export function Login(){
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("teste@gmail.com");
+  const [password, setPassword] = useState("teste123");
   const navigate = useNavigate();
 
 
